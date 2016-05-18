@@ -1,0 +1,9 @@
+postgres:  
+  image: postgres
+  ports:
+    - "5433:5433"
+  environment:
+    - POSTGRES_USER=postgres
+    - POSTGRES_PASSWORD=postgres
+  volumes:
+    - /var/lib/postgresql/9.3/data
